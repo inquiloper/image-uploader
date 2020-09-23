@@ -32,7 +32,7 @@ class App extends React.Component{
             showCopiedTooltip: true
         };
 
-        this.endpoint = "http://localhost:8000/upload-file";
+        this.endpoint = process.env.REACT_APP_BACKEND_URL;
     }
 
     componentDidMount() {
